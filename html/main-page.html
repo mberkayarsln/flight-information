@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/main-page.css">
+    <link rel="icon" href="/images/icon.png">
+    <title>Main Page</title>
+</head>
+
+<body>
+
+    <!-- <video autoplay loop muted plays-inline class="back-video">
+        <source src="/videos/production ID_4069480.mp4" type="video/mp4">
+    </video> -->
+
+    <img id="background" src="/images/vac3.jpg" alt="">
+
+
+    <section class="header">
+
+        <div class="container">
+            <a href="#" class="brand-name">TRAVEL</a>
+            <nav>
+                <ul class="nav_links">
+                    <li><a href="#suggestions">Popular Cities</a></li>
+                    <li><a href="#">Projects</a></li>
+                    <li><a href="#">About</a></li>
+                </ul>
+            </nav>
+            <a href="#contact">Contact</a>
+        </div>
+
+    </section>
+
+
+
+    <section class="home">
+        <div class="container">
+
+            <article class="search-para">
+                <h1>Title</h1>
+                <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum voluptatum odio est quod soluta error
+                    facilis odit suscipit quisquam porro cumque, ut pariatur consequuntur saepe? Sequi modi, id alias
+                    architecto, odit adipisci unde officiis ducimus veniam aliquam tenetur praesentium nobis!
+                </p>
+            </article>
+
+            <form action="" class="search-bar">
+                <input type="text" placeholder="search">
+                <button type="submit"><img src="/images/search.png" alt=""></button>
+            </form>
+
+        </div>
+    </section>
+
+
+    <hr>
+
+
+    <section class="suggestions" id="suggestions">
+
+        <div class="container">
+
+            <div class="city">
+
+                <img src="/images/miami.webp" alt="">
+
+                <div class="city-para">
+                    <h1>Miami</h1>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem, quisquam maxime ipsa non illo
+                        nihil odio voluptatibus perspiciatis. Sint ullam iste rem quos animi vitae nostrum officiis, ex
+                        incidunt perspiciatis a id quaerat sequi fugit quam doloremque maxime cum qui!
+                    </p>
+                    <a href="#">Inspect Miami</a>
+                </div>
+
+            </div>
+
+            <div class="city">
+
+                <img src="/images/antalya.jpeg" alt="">
+
+                <div class="city-para">
+                    <h1>Antalya</h1>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem, quisquam maxime ipsa non illo
+                        nihil odio voluptatibus perspiciatis. Sint ullam iste rem quos animi vitae nostrum officiis, ex
+                        incidunt perspiciatis a id quaerat sequi fugit quam doloremque maxime cum qui!
+                    </p>
+                    <a href="#">Inspect Antalya</a>
+
+                </div>
+
+            </div>
+
+            <div class="city">
+
+                <img src="/images/ibiza.jpeg" alt="">
+
+                <div class="city-para">
+                    <h1>Ibiza</h1>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem, quisquam maxime ipsa non illo
+                        nihil odio voluptatibus perspiciatis. Sint ullam iste rem quos animi vitae nostrum officiis, ex
+                        incidunt perspiciatis a id quaerat sequi fugit quam doloremque maxime cum qui!
+                    </p>
+                    <a href="#">Inspect Ibiza</a>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <hr>
+
+
+    <section class="flights">
+
+        <div class="container">
+
+            <h1>Biletlere Bakın</h1>
+
+            <div class="cities">
+
+                <label for="origin">Nereden : </label>
+                <input id="origin" type="text" placeholder="Şehir veya Havalimanı Giriniz...">
+
+                <label for="dest">Nereye : </label>
+                <input id="dest" type="text" placeholder="Şehir veya Havalimanı Giriniz...">
+            </div>
+
+            <div class="dates">
+
+                <label for="going">Gidiş Tarihi : </label>
+                <input type="date" id="going">
+
+                <label for="return">Dönüş Tarihi : </label>
+                <input type="date" id="return">
+
+            </div>
+
+            <div class="last">
+
+                <label for="number">Kişi Sayısı : </label>
+                <input type="number" id="number">
+
+                <div class="choice">
+                    <label for="one-way">Tek Yön : </label>
+                    <input type="radio" id="one-way" name="type">
+
+                    <label for="round-trip">Gidiş Dönüş : </label>
+                    <input type="radio" id="round-trip" name="type">
+                </div>
+
+            </div>
+
+            <button>Arayın</button>
+
+        </div>
+
+    </section>
+
+
+
+
+
+
+
+
+    <hr>
+
+    <section class="contact" id="contact">
+
+        <div class="container">
+
+            <h1 class="form-title">Contact</h1>
+
+            <form action="#">
+
+                <div class="main-user-info">
+
+                    <div class="user-input-box">
+                        <label for="fullName">Full Name</label>
+                        <input type="text" id="fullName" name="fullName" placeholder="Enter Full Name">
+                    </div>
+
+                    <div class="user-input-box">
+                        <label for="email">Email</label>
+                        <input type="email" id="email" name="email" placeholder="Enter Email">
+                    </div>
+
+                    <div class="user-input-box">
+                        <label for="message">Message</label>
+                        <textarea name="message" id="message" placeholder="Your Message"></textarea>
+                    </div>
+
+                </div>
+
+                <button>Send Message</button>
+
+            </form>
+
+        </div>
+
+    </section>
+
+</body>
+
+</html>
