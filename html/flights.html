@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -8,12 +9,25 @@
     <link rel="stylesheet" href="/css/flights.css">
     <title>Flights</title>
 </head>
+
 <body>
 
     <section class="header">
 
         <div class="container">
             <a href="#" class="brand-name">TRAVEL</a>
+
+
+            <h2 class="currency-select"><img src="/images/tr.webp" alt=""> &#8378; <img src="/images/down-arrow.png" alt="" id="down-arrow"></h2>
+
+            <ul class="dropdown">
+                <div id="close"><span>&#10005;</span></div>
+                <li><a href="#"><span>&#8378;</span>TRY</a></li>
+                <li><a href="#"><span>&#36;</span>USD</a></li>
+                <li><a href="#"><span>&#128;</span>EUR</a></li>
+                <li><a href="#"><span>&#163;</span>GBP</a></li>
+            </ul>
+
         </div>
 
     </section>
@@ -22,14 +36,28 @@
 
         <div class="container">
 
-            <table>
+            <div class="max-min">
+
+                <div class="min mm">
+                    <span>Minimum Price &rarr; 100</span>
+                </div>
+
+                <div class="max mm">
+                    <span>Maximum Price &rarr; 900</span>
+                </div>
+
+            </div>
+
+
+
+            <table class="table">
 
                 <thead>
 
                     <tr>
                         <th>Havayolu</th>
-                        <th>Uçuş Detayı</th>
-                        <th>Kalkış ve Varış</th>
+                        <th>Detay</th>
+                        <th>Kalkış-Varış</th>
                         <th>Fiyat</th>
                     </tr>
 
@@ -38,29 +66,42 @@
                 <tbody>
 
                     <tr>
-                        <td>Pegaus</td>
+                        <td>Pegasus</td>
                         <td>15kg</td>
                         <td>7-9</td>
-                        <td>900</td>
+                        <td>1000</td>
                     </tr>
+                    <tr>
+                        <td>Pegasus</td>
+                        <td>15kg</td>
+                        <td>7-9</td>
+                        <td>1000</td>
+                    </tr>
+                    <tr>
+                        <td>Pegasus</td>
+                        <td>15kg</td>
+                        <td>7-9</td>
+                        <td>1000</td>
+                    </tr>
+                    <tr>
+                        <td>Pegasus</td>
+                        <td>15kg</td>
+                        <td>7-9</td>
+                        <td>1000</td>
+                    </tr>
+
 
                 </tbody>
 
-
             </table>
-
-
-
-
-
 
         </div>
 
-
-
-
-
     </section>
-    
+
+
+    <script src="/js/dropdown.js"></script>
+
 </body>
+
 </html>
