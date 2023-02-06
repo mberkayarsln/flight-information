@@ -18,15 +18,15 @@
             <a href="#" class="brand-name">TRAVEL</a>
 
 
-            <h2 class="currency-select"><img src="/images/tr.webp" alt=""> &#8378; <img src="/images/down-arrow.png" alt="" id="down-arrow"></h2>
+            <!-- <h2 class="currency-select"><img src="/images/tr.webp" alt=""> &#8378; <img src="/images/down-arrow.png"
+                    alt="" id="down-arrow"></h2> -->
 
-            <ul class="dropdown">
-                <div id="close"><span id="close-sign">&#10005;</span></div>
-                <li><a href="#"><span>&#8378;</span>TRY</a></li>
-                <li><a href="#"><span>&#36;</span>USD</a></li>
-                <li><a href="#"><span>&#128;</span>EUR</a></li>
-                <li><a href="#"><span>&#163;</span>GBP</a></li>
-            </ul>
+            <select class="currency-select">
+                <option value="TRY" selected>TRY</option>
+                <option value="USD">USD</option>
+                <option value="EUR">EUR</option>
+                <option value="GBP">GBP</option>
+            </select>
 
         </div>
 
@@ -39,11 +39,11 @@
             <div class="max-min">
 
                 <div class="min mm">
-                    <span>Minimum Price &rarr; 100</span>
+                    <!-- <span>Minimum Price &rarr; 100</span> -->
                 </div>
 
                 <div class="max mm">
-                    <span>Maximum Price &rarr; 900</span>
+                    <!-- <span>Maximum Price &rarr; 900</span> -->
                 </div>
 
             </div>
@@ -56,7 +56,8 @@
 
                     <tr>
                         <th>Havayolu</th>
-                        <th>Detay</th>
+                        <th>Nereden</th>
+                        <th>Nereye</th>
                         <th>Kalkış-Varış</th>
                         <th>Fiyat</th>
                     </tr>
@@ -71,7 +72,7 @@
                         <td>7-9</td>
                         <td>1000</td>
                     </tr> -->
-                    
+
                 </tbody>
 
             </table>
@@ -80,6 +81,12 @@
 
     </section>
 
+    <script src="/js/dropdown.js"></script>
+    <script src="/js/flight.js"></script>
+    <script src="/js/ui.js"></script>
+    <script src="/js/storage.js"></script>
+    <script src="/js/currency.js"></script>
+    <script src="/js/flights-page.js"></script>
 
 </body>
 
