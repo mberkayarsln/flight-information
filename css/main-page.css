@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap');
 
-*{
-    font-family: "Montserrat",sans-serif;
+* {
+    font-family: "Montserrat", sans-serif;
     box-sizing: border-box;
     margin: 0;
     padding: 0;
@@ -12,7 +12,7 @@
     background-size: cover;
 } */
 
-#background{
+#background {
     z-index: -1;
     position: fixed;
     top: 0;
@@ -23,11 +23,11 @@
     opacity: 1;
 }
 
-html{
+html {
     scroll-behavior: smooth;
 }
 
-hr{
+hr {
     border: 1px solid #edf0f1;
 }
 
@@ -42,45 +42,46 @@ hr{
     
 } */
 
-.header .container{
+.header .container {
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding: 30px 10%;
 }
 
-.header .container li,a{
+.header .container li,
+a {
     font-weight: 500;
     font-size: 20px;
-    color:#edf0f1;
+    color: #edf0f1;
     text-decoration: none;
     transition: 0.7s ease;
 }
 
-.header .container a:hover{
+.header .container a:hover {
     transform: scale(1.2);
 }
 
-.header .container li:hover{
+.header .container li:hover {
     transform: scale(1.2);
 }
 
-.header .container .brand-name{
+.header .container .brand-name {
     font-size: 25px;
-    font-weight:900;
+    font-weight: 900;
 }
 
 .header .container nav .nav_links {
     list-style: none;
 }
 
-.header .container nav .nav_links li{
+.header .container nav .nav_links li {
     display: inline-block;
-    padding: 0 20px ;
+    padding: 0 20px;
 }
 
 
-.home .container{
+.home .container {
     width: 100%;
     min-height: 100vh;
     padding: 5%;
@@ -89,36 +90,36 @@ hr{
     justify-content: space-between;
 }
 
-.home .container .search-bar{
-    width:40%;
-    background: rgba(255,255,255,0.2);
+.home .container .search-bar {
+    width: 40%;
+    background: rgba(255, 255, 255, 0.8);
     display: flex;
     align-items: center;
     border-radius: 60px;
     padding: 10px 20px;
 }
 
-.home .container .search-bar input{
+.home .container .search-bar input {
     background: transparent;
-    flex:1;
+    flex: 1;
     border: 0;
     outline: none;
     padding: 12px 20px;
     font-size: 20px;
-    color:#edf0f1;
+    color: rgb(65, 175, 199);
     text-transform: capitalize;
 }
 
-::placeholder{
-    color:#edf0f1;
+::placeholder {
+    color: rgb(65, 175, 199);
 }
 
-.home .container .search-bar button img{
+.home .container .search-bar button img {
     width: 25px;
     background: transparent;
 }
 
-.home .container .search-bar button{
+.home .container .search-bar button {
     border: 0;
     border-radius: 50%;
     width: 60px;
@@ -130,11 +131,11 @@ hr{
     transition: 0.7s ease;
 }
 
-.home .container .search-bar button:hover{
-    background: rgba(65,175,199,0.8);
+.home .container .search-bar button:hover {
+    background: rgba(65, 175, 199, 0.8);
 }
 
-.home .container .search-para{
+.home .container .search-para {
     width: 40%;
     text-align: center;
     margin: 20px 0;
@@ -142,22 +143,22 @@ hr{
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    color:#edf0f1;
+    color: #edf0f1;
     font-size: 1.2em;
     letter-spacing: 0.5px;
 }
 
-.home .container .search-para h1{
+.home .container .search-para h1 {
     text-transform: uppercase;
     font-size: 2em;
     margin-bottom: 10px;
 }
 
-.home .container .search-para p{
+.home .container .search-para p {
     line-height: 2em;
 }
 
-.suggestions .container{
+.suggestions .container {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -165,55 +166,55 @@ hr{
     margin: 40px 0;
 }
 
-.suggestions .container .city{
+.suggestions .container .city {
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding: 20px 60px;
     margin: 10px 0;
     width: 80%;
-    background: rgba(255,255,255,0.2);
+    background: rgba(255, 255, 255, 0.6);
     border: none;
     border-radius: 20px;
 }
 
-.suggestions .container .city:nth-child(odd){
+.suggestions .container .city:nth-child(odd) {
     flex-direction: row;
 }
 
-.suggestions .container .city:nth-child(even){
+.suggestions .container .city:nth-child(even) {
     flex-direction: row-reverse;
 }
 
-.suggestions .container .city img{
+.suggestions .container .city img {
     width: 45%;
     border: none;
     border-radius: 50%;
     opacity: 0.9;
 }
 
-.suggestions .container .city .city-para{
+.suggestions .container .city .city-para {
     width: 40%;
     text-align: center;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    color:#edf0f1;
+    color: #edf0f1;
     letter-spacing: 1px;
 }
 
-.suggestions .container .city .city-para h1{
+.suggestions .container .city .city-para h1 {
     text-transform: uppercase;
     margin-bottom: 10px;
     font-size: 1.2em;
 }
 
-.suggestions .container .city .city-para p{
+.suggestions .container .city .city-para p {
     line-height: 1.2em;
 }
 
-.suggestions .container .city .city-para a{
+.suggestions .container .city .city-para a {
     text-decoration: none;
     margin-top: 50px;
     padding: 15px;
@@ -225,9 +226,9 @@ hr{
 
 }
 
-.suggestions .container .city .city-para a:hover{
+.suggestions .container .city .city-para a:hover {
     border-color: #edf0f1;
-    color:#edf0f1;
+    color: #edf0f1;
     background-color: #63BEC3;
 }
 
@@ -237,22 +238,22 @@ hr{
     align-items: center;
     justify-content: center;
     margin: 40px auto;
-    background: rgba(180,180,180,0.3);
+    background: rgba(180, 180, 180, 0.3);
     width: 80%;
     border: none;
     border-radius: 20px;
 }
 
-.flights .container input{
+.flights .container input {
     transition: 0.7s ease;
 }
 
-.flights .container h1{
-    color:#17252a;
+.flights .container h1 {
+    color: #17252a;
     margin: 20px;
 }
 
-.flights .container .cities{
+.flights .container .cities {
     width: 70%;
     display: flex;
     justify-content: space-between;
@@ -260,53 +261,50 @@ hr{
     padding: 30px 10px;
 }
 
-.flights .container .cities label{
+.flights .container .cities label {
     font-size: 20px;
-    color:#edf0f1;
+    color: #17252a;
     white-space: nowrap;
 }
 
-.flights .container .cities input{
-    padding: 5px 10px;
-    border: none;
-    outline: none;
-    border-radius: 60px;
-    background-color: rgba(255,255,255,0.3);
-    width: 35%;
-    color: #edf0f1;
-}
-
-.flights .container .cities input:focus{
-    background-color: rgba(23, 37, 42,0.8);
-}
-
-.flights .container .dates{
-    width: 70%;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 30px 10px;
-}
-
-.flights .container .dates label{
-    font-size: 20px;
-    color:#edf0f1;
-    white-space: nowrap;
-
-}
-
-.flights .container .dates input{
-    padding: 5px 10px;
-    border: none;
-    outline: none;
-    border-radius: 60px;
-    background-color: rgba(255,255,255,0.3);
+.flights .container .cities select {
     width: 30%;
-    color: #edf0f1;
+    padding: 5px 10px;
+    border: none;
+    outline: none;
+    border-radius: 60px;
+    background-color: rgba(255, 255, 255, 0.8);
+    width: 30%;
+    color: rgb(65, 175, 199);
 }
 
-.flights .container .dates input:focus{
-    background-color: rgba(23, 37, 42,0.8);
+.flights .container .dates {
+    width: 70%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px 10px;
+}
+
+.flights .container .dates label {
+    font-size: 20px;
+    color: #17252a;
+    white-space: nowrap;
+
+}
+
+.flights .container .dates input {
+    padding: 5px 10px;
+    border: none;
+    outline: none;
+    border-radius: 60px;
+    background-color: rgba(255, 255, 255, 0.8);
+    width: 30%;
+    color: rgb(65, 175, 199);
+}
+
+.flights .container .dates input:focus {
+    background-color: rgba(23, 37, 42, 0.8);
 }
 
 .flights .container .last {
@@ -317,91 +315,91 @@ hr{
     padding: 30px 10px;
 }
 
-.flights .container .last label{
+.flights .container .last label {
     font-size: 20px;
-    color:#edf0f1;
+    color: #17252a;
     white-space: nowrap;
 }
 
-.flights .container .last input{
+.flights .container .last input {
     padding: 5px 10px;
     border: none;
     outline: none;
     border-radius: 60px;
-    background-color: rgba(255,255,255,0.3);
+    background-color: rgba(255, 255, 255, 0.8);
     width: 30%;
-    color: #edf0f1;
+    color: #17252a;
 }
 
-.flights .container .last input:focus{
-    background-color: rgba(23, 37, 42,0.8);
+.flights .container .last input:focus {
+    background-color: rgba(23, 37, 42, 0.8);
 }
 
-.flights .container .last .choice{
+.flights .container .last .choice {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    width: 40% ;
+    width: 40%;
 }
 
-.flights .container .last .choice input{
+.flights .container .last .choice input {
     width: 15px;
 }
 
-.flights .container button{
+.flights .container button {
     margin: 20px;
     width: 15%;
     padding: 10px 20px;
     border: none;
     outline: none;
     border-radius: 20px;
-    background:rgba(43, 122, 120,0.2);
+    background: rgba(43, 122, 120, 0.2);
     cursor: pointer;
     color: #17252a;
     transition: 0.7s ease;
     font-size: 18px;
 }
 
-.flights .container button:hover{
-    background:rgba(23, 37, 42,0.8);
+.flights .container button:hover {
+    background: rgba(23, 37, 42, 0.8);
     color: #3aafa9;
 }
 
-.contact .container{
+.contact .container {
     display: flex;
     flex-direction: column;
     width: 80%;
     margin: 40px auto;
     justify-content: center;
     align-items: center;
-    background: rgba(180,180,180,0.3);
+    background: rgba(180, 180, 180, 0.3);
     border: none;
     border-radius: 20px;
 }
 
-.contact .container h1{
-    color:#17252a;
+.contact .container h1 {
+    color: #17252a;
     margin: 20px;
 }
 
-.contact .container form{
+.contact .container form {
     width: 70%;
     display: flex;
     flex-direction: column;
 }
 
-.contact .container ::placeholder{
+.contact .container ::placeholder {
     text-align: center;
 }
 
-.contact .container .main-user-info{
+.contact .container .main-user-info {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
 }
 
-.contact .container .main-user-info .user-input-box{
+.contact .container .main-user-info .user-input-box {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -410,34 +408,35 @@ hr{
     margin: 10px 0;
 }
 
-.contact .container .main-user-info .user-input-box label{
+.contact .container .main-user-info .user-input-box label {
     font-size: 20px;
-    color:#edf0f1;
+    color: #edf0f1;
     white-space: nowrap;
     margin-bottom: 20px;
 }
 
-.contact .container .main-user-info .user-input-box input,textarea{
+.contact .container .main-user-info .user-input-box input,
+textarea {
     padding: 10px 15px;
     border: none;
     outline: none;
     border-radius: 60px;
-    background-color: rgba(255,255,255,0.3);
+    background-color: rgba(255, 255, 255, 0.8);
     width: 60%;
     color: #edf0f1;
     resize: none;
     transition: 0.7s ease;
 }
 
-.contact .container .main-user-info .user-input-box input:focus{
-    background-color: rgba(23, 37, 42,0.8);
+.contact .container .main-user-info .user-input-box input:focus {
+    background-color: rgba(23, 37, 42, 0.8);
 }
 
-.contact .container .main-user-info .user-input-box textarea:focus{
-    background-color: rgba(23, 37, 42,0.8);
+.contact .container .main-user-info .user-input-box textarea:focus {
+    background-color: rgba(23, 37, 42, 0.8);
 }
 
-.contact .container button{
+.contact .container button {
     margin: 20px auto;
     padding: 10px 20px;
     width: 20%;
@@ -445,14 +444,14 @@ hr{
     border: none;
     outline: none;
     border-radius: 20px;
-    background-color: rgba(43, 122, 120,0.2);
+    background-color: rgba(43, 122, 120, 0.2);
     cursor: pointer;
-    color:#17252a;
+    color: #17252a;
     transition: 0.7s ease;
     font-size: 18px;
 }
 
-.contact .container button:hover{
-    background:rgba(23, 37, 42,0.8);
+.contact .container button:hover {
+    background: rgba(23, 37, 42, 0.8);
     color: #3aafa9;
 }

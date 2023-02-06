@@ -128,10 +128,25 @@
             <div class="cities">
 
                 <label for="origin">Nereden : </label>
-                <input id="origin" type="text" placeholder="Şehir veya Havalimanı Giriniz...">
+                <select name="origin" id="origin">
+                    <option value="IST" selected>Istanbul</option>
+                    <option value="ESB">Ankara</option>
+                    <option value="JFK">New York</option>
+                    <option value="DXB">Dubai</option>
+                    <option value="BER">Berlin</option>
+                    <option value="DUB">Dublin</option>
+                </select>
 
-                <label for="dest">Nereye : </label>
-                <input id="dest" type="text" placeholder="Şehir veya Havalimanı Giriniz...">
+                <label for="">Nereye : </label>
+                <select name="dest" id="dest">
+                    <option value="IST">Istanbul</option>
+                    <option value="ESB" selected>Ankara</option>
+                    <option value="JFK">New York</option>
+                    <option value="DXB">Dubai</option>
+                    <option value="BER">Berlin</option>
+                    <option value="DUB">Dublin</option>
+                </select>
+                
             </div>
 
             <div class="dates">
@@ -150,16 +165,15 @@
                 <input type="number" id="number">
 
                 <div class="choice">
+
                     <label for="one-way">Tek Yön : </label>
                     <input type="radio" id="one-way" name="type">
 
-                    <label for="round-trip">Gidiş Dönüş : </label>
-                    <input type="radio" id="round-trip" name="type">
                 </div>
 
             </div>
 
-            <button>Arayın</button>
+            <button id="search-btn">Arayın</button>
 
         </div>
 

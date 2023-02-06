@@ -1,8 +1,9 @@
 const downArrow = document.querySelector("#down-arrow");
+const closeSign = document.querySelector("#close-sign");
 const dropList = document.querySelector(".dropdown");
 
 downArrow.addEventListener("click",showList);
-dropList.addEventListener("click",closeList);
+closeSign.addEventListener("click",closeList);
 
 
 function showList(e){
