@@ -1,21 +1,16 @@
+const currencySelect = document.querySelector(".currency-select");
 
 
-document.addEventListener("DOMContentLoaded",showFlights);
+eventListeners();
 
-function showFlights(e){
-
-
-    addFlightsToUI();
-
-
-    e.preventDefault();
+function eventListeners() {
+    document.addEventListener("DOMContentLoaded", showFlights);
 }
 
-function changeCurrency(e){
 
-    
+function showFlights(e) {
 
-
+    addFlightsToUI();
 
     e.preventDefault();
 }

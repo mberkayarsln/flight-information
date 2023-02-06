@@ -1,8 +1,9 @@
-function addFlightsToUI() {
+let flightsBody = document.getElementById("flights-body");
+let minDiv = document.querySelector(".min");
+let maxDiv = document.querySelector(".max");
 
-        let flightsBody = document.getElementById("flights-body");
-        let minDiv = document.querySelector(".min");
-        let maxDiv = document.querySelector(".max");
+
+function addFlightsToUI() {
     
         let flightsObj = getDataFromStorage();
         
@@ -33,7 +34,7 @@ function addFlightsToUI() {
             let depDate = flight.legs[0].departure;
             let arrDate = flight.legs[0].arrival;
             let price = flight.pricing_options[0].price.amount;
-    
+
             let depTime = (depDate.slice(11,16))
             let arrTime = (arrDate.slice(11,16))
     
@@ -43,7 +44,7 @@ function addFlightsToUI() {
             <td>${originName}</td>
             <td>${destName}</td>
             <td>${depTime + "-" + arrTime}</td>
-            <td>${price} TL</td>
+            <td class="price-data">${price} TL</td>
         </tr>`
     
     

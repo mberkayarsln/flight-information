@@ -1,11 +1,9 @@
-async function getCurrencies(){
+async function getCurrencies(url){
 
-    let response = await fetch("https://api.exchangerate.host/latest?base=TRY");
+    let response = await fetch(url);
 
     let data = await response.json();
 
     return data;
 
 }
-
-getCurrencies().then(data=>console.log(data))
