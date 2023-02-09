@@ -18,8 +18,8 @@ function addFlightsToUI() {
     let maxPrice = Math.max.apply(Math, priceArr).toFixed(2);
     let minPrice = Math.min.apply(Math, priceArr).toFixed(2);
 
-    minDiv.innerHTML = `<span>Minimum Price &rarr; ${minPrice} ${currencySelect.value}</span>`;
-    maxDiv.innerHTML = `<span>Maximum Price &rarr; ${maxPrice} ${currencySelect.value}</span>`;
+    minDiv.innerHTML = `<span>Minimum Fiyat &rarr; ${minPrice} ${currencySelect.value}</span>`;
+    maxDiv.innerHTML = `<span>Maksimum Fiyat &rarr; ${maxPrice} ${currencySelect.value}</span>`;
 
 
     flights.forEach(function (flight) {
@@ -38,8 +38,8 @@ function addFlightsToUI() {
 
         flightsBody.innerHTML += `<tr>
             <td>${carrierName}</td>
-            <td>${originName}</td>
-            <td>${destName}</td>
+            <td>${originName.split(" ")[0]}</td>
+            <td>${destName.split(" ")[0]}</td>
             <td>${depTime + "-" + arrTime}</td>
             <td>${price} ${currencySelect.value}</td>
         </tr>`

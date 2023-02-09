@@ -7,7 +7,9 @@ let tryPrices = [];
 eventListeners();
 
 function eventListeners() {
+
     document.addEventListener("DOMContentLoaded", showFlights);
+
     currencySelect.addEventListener("change", setPrices);
 }
 
@@ -18,11 +20,20 @@ function showFlights(e) {
 
     getTryPrices();
 
+    changeTitle();
+
     e.preventDefault();
 }
 
+function changeTitle() {
 
-function getTryPrices(){
+    let originName = flights[0].itineraries.results[0].legs[0].origin.name;
+    let destName = flights[0].itineraries.results[0].legs[0].destination.name;
+
+    document.title = originName.split(" ")[0] + " - " + destName.split(" ")[0];
+}
+
+function getTryPrices() {
 
     for (i = 0; i < length; i++) {
 
@@ -31,7 +42,6 @@ function getTryPrices(){
     }
 
 }
-
 
 function setPrices(e) {
 

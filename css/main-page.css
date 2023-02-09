@@ -53,7 +53,7 @@ hr {
 a {
     font-weight: 500;
     font-size: 20px;
-    color: #edf0f1;
+    color: rgba(255, 255, 255, 0.9);
     text-decoration: none;
     transition: 0.7s ease;
 }
@@ -173,7 +173,7 @@ a {
     padding: 20px 60px;
     margin: 10px 0;
     width: 80%;
-    background: rgba(255, 255, 255, 0.6);
+    background: rgba(255, 255, 255,0.4);
     border: none;
     border-radius: 20px;
 }
@@ -200,7 +200,7 @@ a {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    color: #edf0f1;
+    color: rgba(23, 37, 42, 0.8);
     letter-spacing: 1px;
 }
 
@@ -222,7 +222,7 @@ a {
     border-radius: 12px;
     transition: 0.7s ease;
     color: #63BEC3;
-    background-color: #edf0f1;
+    background-color:rgba(255, 255, 255,1);
 
 }
 
@@ -307,45 +307,6 @@ a {
     background-color: rgba(23, 37, 42, 0.8);
 }
 
-.flights .container .last {
-    width: 70%;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 30px 10px;
-}
-
-.flights .container .last label {
-    font-size: 20px;
-    color: #17252a;
-    white-space: nowrap;
-}
-
-.flights .container .last input {
-    padding: 5px 10px;
-    border: none;
-    outline: none;
-    border-radius: 60px;
-    background-color: rgba(255, 255, 255, 0.8);
-    width: 30%;
-    color: #17252a;
-}
-
-.flights .container .last input:focus {
-    background-color: rgba(23, 37, 42, 0.8);
-}
-
-.flights .container .last .choice {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    width: 40%;
-}
-
-.flights .container .last .choice input {
-    width: 15px;
-}
-
 .flights .container button {
     margin: 20px;
     width: 15%;
@@ -417,13 +378,13 @@ a {
 
 .contact .container .main-user-info .user-input-box input,
 textarea {
-    padding: 10px 15px;
+    padding: 10px 30px;
     border: none;
     outline: none;
     border-radius: 60px;
     background-color: rgba(255, 255, 255, 0.8);
     width: 60%;
-    color: #edf0f1;
+    color: #63BEC3;
     resize: none;
     transition: 0.7s ease;
 }
@@ -436,11 +397,10 @@ textarea {
     background-color: rgba(23, 37, 42, 0.8);
 }
 
-.contact .container button {
+.contact .container #send-message {
     margin: 20px auto;
     padding: 10px 20px;
-    width: 20%;
-    white-space: nowrap;
+    width: 30%;
     border: none;
     outline: none;
     border-radius: 20px;
@@ -451,7 +411,7 @@ textarea {
     font-size: 18px;
 }
 
-.contact .container button:hover {
+.contact .container #send-message:hover {
     background: rgba(23, 37, 42, 0.8);
     color: #3aafa9;
 }

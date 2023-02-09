@@ -7,7 +7,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="/css/main-page.css">
     <link rel="icon" href="/images/icon.png">
-    <title>Main Page</title>
+    <title>Ana Sayfa</title>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js">
+    </script>
+    <script type="text/javascript">
+        (function () {
+            emailjs.init("4VK_CLlOMzrqbIuxW");
+        })();
+    </script>
 </head>
 
 <body>
@@ -22,15 +29,14 @@
     <section class="header">
 
         <div class="container">
-            <a href="#" class="brand-name">TRAVEL</a>
+            <a href="#" class="brand-name">SEYAHAT NOKTASI</a>
             <nav>
                 <ul class="nav_links">
-                    <li><a href="#suggestions">Popular Cities</a></li>
-                    <li><a href="#">Projects</a></li>
-                    <li><a href="#">About</a></li>
+                    <li><a href="#suggestions">Şehir Tavsiyeleri</a></li>
+                    <li><a href="#flights">Uçak Biletleri</a></li>
                 </ul>
             </nav>
-            <a href="#contact">Contact</a>
+            <a href="#contact">İletişim</a>
         </div>
 
     </section>
@@ -41,17 +47,16 @@
         <div class="container">
 
             <article class="search-para">
-                <h1>Title</h1>
+                <h1>Dünyayı Keşfedin!</h1>
                 <p>
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum voluptatum odio est quod soluta error
-                    facilis odit suscipit quisquam porro cumque, ut pariatur consequuntur saepe? Sequi modi, id alias
-                    architecto, odit adipisci unde officiis ducimus veniam aliquam tenetur praesentium nobis!
+                    Dünyanın en güzel şehirlerini teker teker inceleyin, beğendiklerinize ulaşmak için hemen bilet satın
+                    alın!
                 </p>
             </article>
 
             <form action="" class="search-bar">
-                <input type="text" placeholder="search">
-                <button type="submit"><img src="/images/search.png" alt=""></button>
+                <input type="text" placeholder="Arayın..." id="city-search">
+                <button type="submit" id="city-search-btn"><img src="/images/search.png" alt=""></button>
             </form>
 
         </div>
@@ -71,11 +76,15 @@
 
                 <div class="city-para">
                     <h1>Miami</h1>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem, quisquam maxime ipsa non illo
-                        nihil odio voluptatibus perspiciatis. Sint ullam iste rem quos animi vitae nostrum officiis, ex
-                        incidunt perspiciatis a id quaerat sequi fugit quam doloremque maxime cum qui!
+                    <p>Florida eyaletinin ikinci büyük şehri, Amerika'nın 45. büyük kenti olan Miami, Florida Everglades
+                        ile Biscayne Bay arasında bulunmaktadır. Miami nehri etrafında kurulmuş olan
+                        şehir, mükemmel kumsalları, 24 saat gece hayatı ve dünyaca ünlü gemi seyahatlerinin (cruise)
+                        merkezi olması gibi özelliklerden dolayı Amerikalılar tarafından Magic City (Sihirli Şehir)
+                        olarak isimlendirilmiştir. Kısaca Miami, farklı kültürlerle kaynaşmak, çılgın gece hayatı, beyaz
+                        kumsallar, alışveriş, tarihi yerler, mükemmel gün batımı manzaraları ve tüm yıl boyu güneş
+                        isteyenler için ideal bir yerdir.
                     </p>
-                    <a href="#">Inspect Miami</a>
+                    <a href="https://tr.wikipedia.org/wiki/Miami" target="_blank">Miami ' yi inceleyin!</a>
                 </div>
 
             </div>
@@ -86,11 +95,15 @@
 
                 <div class="city-para">
                     <h1>Antalya</h1>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem, quisquam maxime ipsa non illo
-                        nihil odio voluptatibus perspiciatis. Sint ullam iste rem quos animi vitae nostrum officiis, ex
-                        incidunt perspiciatis a id quaerat sequi fugit quam doloremque maxime cum qui!
+                    <p>Deniz, kum, güneş denince akla ilk gelen şehirlerden biri olan Antalya, Türkiye’nin tatil
+                        cenneti. Kilometrelerce uzunluğa sahip plajlarının yanı sıra doğal güzellikleriyle de
+                        ziyaretçilerini büyüleyen şehir, Türkiye’nin en fazla turist ağırlayan kentleri arasında.
+                        Tarih boyunca pek çok medeniyete ev sahipliği yapan Antalya, arkeoloji tutkunları için de önemli
+                        bir gezi noktası. Aspendos, Olympos, Termessos başta olmak üzere yüzyıllar öncesinden günümüze
+                        gelen antik kentleri ziyaret ederken keyifli bir tarih yolculuğuna çıkabilirsiniz. Türkiye’de
+                        görülmesi gereken şehirlerin başında gelen Antalya, keşif tutkunlarını bekliyor.
                     </p>
-                    <a href="#">Inspect Antalya</a>
+                    <a href="https://tr.wikipedia.org/wiki/Antalya" target="_blank">Antalya ' yı inceleyin!</a>
 
                 </div>
 
@@ -102,11 +115,15 @@
 
                 <div class="city-para">
                     <h1>Ibiza</h1>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem, quisquam maxime ipsa non illo
-                        nihil odio voluptatibus perspiciatis. Sint ullam iste rem quos animi vitae nostrum officiis, ex
-                        incidunt perspiciatis a id quaerat sequi fugit quam doloremque maxime cum qui!
+                    <p>Avrupa eğlence hayatının yaz aylarındaki tartışılmaz merkezi olan İbiza, ziyaretçilerine eğlence
+                        dışında birçok doğal güzellik sunuyor.Pırıl pırıl bir denizi, isteyene turkuaz renkli bakir
+                        koyları, isteyene eğlencenin erken
+                        saatlerde başladığı beach clubları, gece yarısından sonra hareketlenen partileri, şık
+                        restoranları ve moda çekimlerinden fırlamış gibi gezen ziyaretçileriyle, hiç uyumayan bir ada
+                        İbiza.
+
                     </p>
-                    <a href="#">Inspect Ibiza</a>
+                    <a href="https://tr.wikipedia.org/wiki/Ibiza" target="_blank">Ibiza ' yi inceleyin!</a>
 
                 </div>
 
@@ -119,11 +136,11 @@
     <hr>
 
 
-    <section class="flights">
+    <section class="flights" id="flights">
 
         <div class="container">
 
-            <h1>Biletlere Bakın</h1>
+            <h1>Biletler</h1>
 
             <div class="cities">
 
@@ -131,22 +148,28 @@
                 <select name="origin" id="origin">
                     <option value="IST" selected>Istanbul</option>
                     <option value="ESB">Ankara</option>
+                    <option value="AYT">Antalya</option>
                     <option value="JFK">New York</option>
                     <option value="DXB">Dubai</option>
                     <option value="BER">Berlin</option>
                     <option value="DUB">Dublin</option>
+                    <option value="MIA">Miami</option>
+                    <option value="IBZ">Ibiza</option>
                 </select>
 
                 <label for="">Nereye : </label>
                 <select name="dest" id="dest">
                     <option value="IST">Istanbul</option>
                     <option value="ESB" selected>Ankara</option>
+                    <option value="AYT">Antalya</option>
                     <option value="JFK">New York</option>
                     <option value="DXB">Dubai</option>
                     <option value="BER">Berlin</option>
                     <option value="DUB">Dublin</option>
+                    <option value="MIA">Miami</option>
+                    <option value="IBZ">Ibiza</option>
                 </select>
-                
+
             </div>
 
             <div class="dates">
@@ -156,20 +179,6 @@
 
                 <label for="return">Dönüş Tarihi : </label>
                 <input type="date" id="return">
-
-            </div>
-
-            <div class="last">
-
-                <label for="number">Kişi Sayısı : </label>
-                <input type="number" id="number" value="1">
-
-                <div class="choice">
-
-                    <label for="one-way">Tek Yön : </label>
-                    <input type="radio" id="one-way" name="type">
-
-                </div>
 
             </div>
 
@@ -186,30 +195,30 @@
 
         <div class="container">
 
-            <h1 class="form-title">Contact</h1>
+            <h1 class="form-title">İletişim</h1>
 
             <form action="#">
 
                 <div class="main-user-info">
 
                     <div class="user-input-box">
-                        <label for="fullName">Full Name</label>
-                        <input type="text" id="fullName" name="fullName" placeholder="Enter Full Name">
+                        <label for="fullName">İsim Soyisim</label>
+                        <input type="text" id="fullName" name="fullName" placeholder="İsminiz...">
                     </div>
 
                     <div class="user-input-box">
-                        <label for="email">Email</label>
-                        <input type="email" id="email" name="email" placeholder="Enter Email">
+                        <label for="email">E-Posta</label>
+                        <input type="email" id="email" name="email" placeholder="E-Posta...">
                     </div>
 
                     <div class="user-input-box">
-                        <label for="message">Message</label>
-                        <textarea name="message" id="message" placeholder="Your Message"></textarea>
+                        <label for="message">Mesaj</label>
+                        <textarea name="message" id="message" placeholder="Mesajınız..." cols="5" rows="5"></textarea>
                     </div>
 
                 </div>
 
-                <button>Send Message</button>
+                <input type="submit" id="send-message"></input>
 
             </form>
 
@@ -220,8 +229,9 @@
 
     <script src="/js/flight.js"></script>
     <script src="/js/storage.js"></script>
+    <script src="/js/mail.js"></script>
     <script src="/js/main.js"></script>
-    
+
 </body>
 
 </html>
