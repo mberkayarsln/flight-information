@@ -3,7 +3,7 @@ async function getFlightData(url){
     const options = {
         method: 'GET',
         headers: {
-            'X-RapidAPI-Key': '9651a94fb6msh7591a056d388f66p1ea105jsnb810bddd76a7',
+            'X-RapidAPI-Key': 'b970c36577mshad6cfb3f6c6febbp178d2ajsn663209211ca9',
             'X-RapidAPI-Host': 'skyscanner44.p.rapidapi.com'
         }
     };

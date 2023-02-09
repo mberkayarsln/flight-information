@@ -1,0 +1,33 @@
+@media(max-width:850px) {
+    .flights .container {
+        width: 90%;
+    }
+}
+
+@media(max-width:755px) {
+    .flights .container {
+        width: 100%;
+    }
+}
+
+@media(max-width:680px) {
+    .flights .container .max-min {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .flights .container .max-min .mm {
+        width: 60%;
+        margin: 10px 0;
+        text-align: center;
+    }
+}
+
+@media(max-width:420px) {
+
+    .flights .container .table th,
+    td {
+        padding: 18px 10px;
+    }
+
+}

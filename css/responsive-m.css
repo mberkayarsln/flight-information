@@ -1,0 +1,160 @@
+@media(max-width:928px) {
+
+    /* .header .container {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .header .container nav .nav_links{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .header .container .brand-name{
+        padding: 20px 0;
+    } */
+
+    .header .container {
+        display: none;
+    }
+
+
+
+    .home .container {
+        flex-direction: column;
+        justify-content: space-around;
+    }
+
+    .home .container .search-bar {
+        margin-bottom: 50px;
+    }
+
+    .home .container .search-bar button {
+        width: 20%;
+    }
+
+
+
+    .suggestions .container .city .city-para .first-p {
+        display: none;
+    }
+
+    .suggestions .container .city .city-para .second-p {
+        display: inline;
+    }
+
+    .suggestions .container .city .city-para a {
+        display: none;
+    }
+
+
+
+    .flights .container .cities {
+        flex-direction: column;
+    }
+
+    .flights .container h1 {
+        margin-bottom: 0;
+    }
+
+    .flights .container .cities label {
+        padding: 10px 0;
+    }
+
+    .flights .container .cities select {
+        width: 50%;
+    }
+
+    .flights .container .dates {
+        flex-direction: column;
+    }
+
+    .flights .container .dates label {
+        padding: 10px 0;
+    }
+
+    .flights .container .dates input {
+        width: 50%;
+    }
+
+    .flights .container button {
+        width: 25%;
+    }
+
+
+}
+
+
+@media(max-width:600px) {
+
+    .home .container .search-bar {
+        width: 70%;
+    }
+
+    .home .container .search-bar button {
+        width: 25%;
+    }
+
+
+    .suggestions .container .city:nth-child(odd) {
+        flex-direction: column;
+    }
+
+    .suggestions .container .city:nth-child(even) {
+        flex-direction: column;
+    }
+
+    .suggestions .container .city img {
+        margin-bottom: 15px;
+    }
+
+    .suggestions .container .city .city-para {
+        width: 100%;
+    }
+
+    .suggestions .container .city .city-para h1 {
+        color: #edf0f1;
+    }
+
+}
+
+@media(max-width:500px) {
+
+    .flights .container .cities {
+        width: 100%;
+    }
+
+    .flights .container .cities select {
+        width: 80%;
+    }
+
+    .flights .container .dates {
+        width: 100%;
+    }
+
+    .flights .container .dates input {
+        width: 80%;
+    }
+
+    .flights .container button {
+        width: 50%;
+    }
+
+
+
+    .contact .container .main-user-info .user-input-box input,
+    textarea {
+        width: 100%;
+    }
+
+    .contact .container #send-message {
+        width: 70%;
+    }
+
+
+
+
+}

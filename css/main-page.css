@@ -95,16 +95,17 @@ a {
     background: rgba(255, 255, 255, 0.8);
     display: flex;
     align-items: center;
+    justify-content: space-between;
     border-radius: 60px;
     padding: 10px 20px;
 }
 
 .home .container .search-bar input {
     background: transparent;
-    flex: 1;
-    border: 0;
+    border: none;
+    width: 70%;
     outline: none;
-    padding: 12px 20px;
+    padding: 12px 10px;
     font-size: 20px;
     color: rgb(65, 175, 199);
     text-transform: capitalize;
@@ -120,9 +121,9 @@ a {
 }
 
 .home .container .search-bar button {
-    border: 0;
+    border: none;
     border-radius: 50%;
-    width: 60px;
+    width: 15%;
     background: rgb(65, 175, 199);
     cursor: pointer;
     display: flex;
@@ -164,6 +165,11 @@ a {
     align-items: center;
     justify-content: center;
     margin: 40px 0;
+}
+
+.suggestions .container h1{
+    color:#17252a;
+    margin-bottom: 30px;
 }
 
 .suggestions .container .city {
@@ -214,6 +220,10 @@ a {
     line-height: 1.2em;
 }
 
+.suggestions .container .city .city-para .second-p{
+    display: none;
+}
+
 .suggestions .container .city .city-para a {
     text-decoration: none;
     margin-top: 50px;
@@ -254,7 +264,7 @@ a {
 }
 
 .flights .container .cities {
-    width: 70%;
+    width: 90%;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -263,8 +273,7 @@ a {
 
 .flights .container .cities label {
     font-size: 20px;
-    color: #17252a;
-    white-space: nowrap;
+    color: #edf0f1;
 }
 
 .flights .container .cities select {
@@ -279,7 +288,7 @@ a {
 }
 
 .flights .container .dates {
-    width: 70%;
+    width: 90%;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -288,9 +297,7 @@ a {
 
 .flights .container .dates label {
     font-size: 20px;
-    color: #17252a;
-    white-space: nowrap;
-
+    color: #edf0f1;
 }
 
 .flights .container .dates input {
@@ -372,7 +379,6 @@ a {
 .contact .container .main-user-info .user-input-box label {
     font-size: 20px;
     color: #edf0f1;
-    white-space: nowrap;
     margin-bottom: 20px;
 }
 
@@ -400,7 +406,7 @@ textarea {
 .contact .container #send-message {
     margin: 20px auto;
     padding: 10px 20px;
-    width: 30%;
+    width: 40%;
     border: none;
     outline: none;
     border-radius: 20px;

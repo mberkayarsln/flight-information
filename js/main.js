@@ -2,8 +2,6 @@ const originCity = document.getElementById("origin");
 const destCity = document.getElementById("dest");
 const goingDate = document.getElementById("going");
 const returnDate = document.getElementById("return");
-const passengerNum = document.getElementById("number");
-const oneWay = document.getElementById("one-way");
 const searchButton = document.getElementById("search-btn");
 
 const cityInput = document.getElementById("city-search");
