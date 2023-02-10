@@ -30,7 +30,7 @@ function addFlightsToUI() {
         let depDate = flight.legs[0].departure;
         let arrDate = flight.legs[0].arrival;
         let price = flight.pricing_options[0].price.amount.toFixed(2);
-
+        let link = flight.deeplink;
 
         let depTime = (depDate.slice(11, 16))
         let arrTime = (arrDate.slice(11, 16))
@@ -42,6 +42,7 @@ function addFlightsToUI() {
             <td>${destName.split(" ")[0]}</td>
             <td>${depTime + "-" + arrTime}</td>
             <td>${price} ${currencySelect.value}</td>
+            <td><a href = ${link} target = "_blank"><img src="/images/link-icon.png" alt=" "></a></td>
         </tr>`
 
 

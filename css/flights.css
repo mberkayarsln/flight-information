@@ -20,12 +20,12 @@ h2 {
     cursor: pointer;
 }
 
-.header .container .currency-select{
+.header .container .currency-select {
     padding: 5px 10px;
     border: none;
     outline: none;
     border-radius: 60px;
-    color:#fff;
+    color: #fff;
     background-color: #24a7e8;
 }
 
@@ -74,4 +74,13 @@ td {
     border-bottom: 1px solid #24a7e8;
     font-weight: bold;
     color: #24a7e8;
+}
+
+.flights .container .table tbody a img{
+    width: 28px;
+    transition: 0.5s ease;
+}
+
+.flights .container .table tbody a img:hover{
+    transform: scale(1.3);
 }
