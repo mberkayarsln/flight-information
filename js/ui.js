@@ -42,7 +42,7 @@ function addFlightsToUI() {
             <td>${destName.split(" ")[0]}</td>
             <td>${depTime + "-" + arrTime}</td>
             <td>${price} ${currencySelect.value}</td>
-            <td><a href = ${link} target = "_blank"><img src="/images/link-icon.png" alt=" "></a></td>
+            <td class = "link"><a href = ${link} target = "_blank"><img src="/images/link-icon.png" alt=" "></a></td>
         </tr>`
 
 

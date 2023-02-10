@@ -9,8 +9,9 @@ eventListeners();
 function eventListeners() {
 
     document.addEventListener("DOMContentLoaded", showFlights);
-
     currencySelect.addEventListener("change", setPrices);
+    flightsBody.addEventListener("click",goLink);
+
 }
 
 
@@ -70,3 +71,10 @@ function setPrices(e) {
     e.preventDefault();
 }
 
+function goLink(e){
+
+    let link = e.target.parentElement.lastElementChild.firstElementChild.href
+
+    window.open(link);
+    
+}

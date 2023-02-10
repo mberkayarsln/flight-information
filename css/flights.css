@@ -67,6 +67,7 @@ td {
 
 .flights .container .table tbody tr {
     border-bottom: 1px solid #dddddd;
+    cursor: pointer;
 }
 
 .flights .container .table tbody tr:nth-of-type(even) {

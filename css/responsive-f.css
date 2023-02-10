@@ -23,6 +23,13 @@
     }
 }
 
+@media(max-width:510px){
+    .flights .container .table .link{
+        display: none;
+    }
+}
+
+
 @media(max-width:420px) {
 
     .flights .container .table th,
